@@ -22,7 +22,7 @@
             </description>
             
             <enclosure
-                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v1.0/auriclePluginManager_v1.0.zip"
+                url="https://github.com/user-attachments/files/24724919/auricle_Plugin_Manager_v1.dmg.zip"
                 sparkle:edSignature="PASTE_FULL_SIGNATURE_HERE"
                 length="PASTE_EXACT_BYTES_HERE"
                 type="application/octet-stream" />
