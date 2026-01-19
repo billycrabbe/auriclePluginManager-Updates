@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Auricle Plugin Manager</title>
+        <description>Most recent updates to Auricle Plugin Manager</description>
+        <language>en</language>
+        
+        <item>
+            <title>Version 1.0</title>
+            <sparkle:version>1.0</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <pubDate>Mon, 19 Jan 2026 12:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[
+                <h2>What's New in 1.0</h2>
+                <ul>
+                    <li>Initial Release</li>
+                    <li>Plugin scanning support for VST3, AU, AAX</li>
+                    <li>Clean new interface</li>
+                </ul>
+                ]]>
+            </description>
+            
+            <enclosure
+                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v1.0/auriclePluginManager_v1.0.zip"
+                sparkle:edSignature="PASTE_FULL_SIGNATURE_HERE"
+                length="PASTE_EXACT_BYTES_HERE"
+                type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
