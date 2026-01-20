@@ -1,30 +1,30 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Auricle Plugin Manager</title>
-        <description>Most recent updates to Auricle Plugin Manager</description>
+        <title>auricle Plugin Manager</title>
+        <description>Most recent updates to auricle Plugin Manager</description>
         <language>en</language>
         
         <item>
-            <title>Version 1.0</title>
-            <sparkle:version>1.0</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <pubDate>Mon, 19 Jan 2026 12:00:00 +0000</pubDate>
+            <title>Version 2</title>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <pubDate>Tue, 20 Jan 2026 16:00:00 +0000</pubDate>
             <description>
                 <![CDATA[
-                <h2>What's New in 1.0</h2>
+                <h2>What's New in 2.0</h2>
                 <ul>
-                    <li>Initial Release</li>
-                    <li>Plugin scanning support for VST3, AU, AAX</li>
-                    <li>Clean new interface</li>
+                    <li>Filter Plugins by Effect Type.</li>
+                    <li>Added plugin scanning support for VST2, AUv3, CLAP, HAL</li>
+                    <li>Small tweaks to branding and colour coding.</li>
                 </ul>
                 ]]>
             </description>
             
             <enclosure
-                url="https://github.com/user-attachments/files/24724919/auricle_Plugin_Manager_v1.dmg.zip"
-                sparkle:edSignature="UvHLKimfSlv72QYw25jLT477qgV0dvhyrgujyz6CEimgXl2WIBMUpsK8l4Pdi8VIoPvSfW+GBV9iD4T63ZrgBw=="
-                length="1467738"
+                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2/auricle_Plugin_Manager_v2.zip"
+                sparkle:edSignature="zan48uN7NcrMp2GBRcD0z6LKzuyHhgJLZ1yHeYuRsTG13wa7uEmbd38wQoD9+cKMP9eaog2Vud0gLB5PtBVRCg=="
+                length="1714601"
                 type="application/octet-stream" />
         </item>
     </channel>
