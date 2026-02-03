@@ -22,8 +22,8 @@
             
             <enclosure
                 url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2.1/auricle_Plugin_Manager_v2.1.dmg"
-                sparkle:edSignature="Tmsh8eeq8JyAuZ6+vkcKNVLN2/qAi9adCwIxi5z7TwfefCqAkiXAmfy7Alcvt5isQ1nsyMjiRcsOUU0OiPxPBA==" 
-                length="1725697"
+                sparkle:edSignature="k37a3qb6Wmb7rOUEILi22PsanUbAbV+mQdMe/TcmEvJArGQ7ABVD5yPYAckx1iCscqFUjtZgHV47o74huXdcAA==" 
+                length="1725646"
                 type="application/octet-stream"
         </item>
     </channel>
