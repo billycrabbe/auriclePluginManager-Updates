@@ -24,7 +24,7 @@
                 url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2.1/auricle_Plugin_Manager_v2.1.zip"
                 sparkle:edSignature="skZMZ4T3nGLDlVlJNKkLbxlmxY+qyWGGmcKBGbyLMpLmLC50+qg8Rs1cFQpEVytO3D1F43TIT37Dt78eykpHCw==" 
                 length="1725688"
-                type="application/x-apple-diskimage"
+                type="application/octet-stream"
         </item>
     </channel>
 </rss>
