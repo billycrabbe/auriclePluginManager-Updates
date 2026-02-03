@@ -6,25 +6,24 @@
         <language>en</language>
         
         <item>
-            <title>Version 2</title>
+            <title>Version 2.1</title>
             <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
-            <pubDate>Tue, 20 Jan 2026 16:00:00 +0000</pubDate>
+            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <pubDate>Tue, 03 FEB 2026 10:00:00 +0000</pubDate>
             <description>
                 <![CDATA[
-                <h2>What's New in 2.0</h2>
+                <h2>What's New in 2.1</h2>
                 <ul>
-                    <li>Filter Plugins by Effect Type.</li>
-                    <li>Added plugin scanning support for VST2, AUv3, CLAP, HAL</li>
-                    <li>Small tweaks to branding and colour coding.</li>
+                    <li>HAL extension updated. ".drive" files now show up in the preview list.</li>
+                    <li>Updates for VST2 preview.</li>
                 </ul>
                 ]]>
             </description>
             
             <enclosure
-                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2/auricle_Plugin_Manager_v2.zip"
-                sparkle:edSignature="zan48uN7NcrMp2GBRcD0z6LKzuyHhgJLZ1yHeYuRsTG13wa7uEmbd38wQoD9+cKMP9eaog2Vud0gLB5PtBVRCg=="
-                length="1714601"
+                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2/auricle_Plugin_Manager_v2.1.zip"
+                sparkle:edSignature="pSfu1Ep+ZWVqyD4qAx3ZKl4IjTfc8YLT+1f6yc48A7WkD/OyNlTJWVQO2uAw4M7wz4VpapBD0Dj1Pl3RTghcBw=="
+                length="1703624"
                 type="application/octet-stream" />
         </item>
     </channel>
