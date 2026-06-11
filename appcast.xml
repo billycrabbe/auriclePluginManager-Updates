@@ -19,8 +19,8 @@
     </description>
     <enclosure
         url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v3.0/auricle_Plugin_Manager_v3.dmg"
-        sparkle:edSignature="PASTE_FROM_GENERATED_APPCAST"
-        length="PASTE_FROM_GENERATED_APPCAST"
+        sparkle:edSignature="N5OuHNHIb/Ka+Ledb4Qs5VIGGb2TDAWxQrkaP5MNwaFWkTgZFRkWgUkcNFJXUfkQ5LjzsmOnnorBPOPq38wfCQ=="
+        length="7128027"
         type="application/octet-stream"
     />
 </item>
