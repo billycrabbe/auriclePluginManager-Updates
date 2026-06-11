@@ -31,28 +31,5 @@
                 type="application/octet-stream"
             />
         </item>
-
-        <item>
-            <title>Version 2.1</title>
-            <sparkle:version>2.1</sparkle:version>
-            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
-            <pubDate>Tue, 03 Feb 2026 10:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[
-                <h2>What's New in 2.1</h2>
-                <ul>
-                    <li>HAL extension updated. ".drive" files now show up in the preview list.</li>
-                    <li>Updates for VST2 preview.</li>
-                </ul>
-                ]]>
-            </description>
-            <enclosure
-                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2.1/auricle_Plugin_Manager_v2.1.dmg"
-                sparkle:edSignature="B7YRSNbgmEekP97RbinZrf+uzZ5E9avQB8wHteVwMIq2R1Yfu3TpxYtHJS7MT4eZg5UfkMwNS1MSE3Kp3P2ICg=="
-                length="1725730"
-                type="application/octet-stream"
-            />
-        </item>
-
     </channel>
 </rss>
