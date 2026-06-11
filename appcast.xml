@@ -11,18 +11,18 @@
             <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
             <pubDate>Thu, 11 Jun 2026 12:00:00 +0000</pubDate>
             <description>
-            <![CDATA[
-            <h2>What's New in 3.0</h2>
-            <ul>
-                <li><strong>Smarter plugin sorting</strong> — plugins automatically land in the right category by reading their built-in metadata, so your library stays organised without you having to do anything.</li>
-                <li><strong>Custom categories</strong> — create, rename, delete, and colour-code your own categories alongside the built-in ones.</li>
-                <li><strong>Plugin Library</strong> — a clean workspace to browse, search, and filter all your plugins by format, manufacturer, or category, with a detail panel for each plugin.</li>
-                <li><strong>Light, Dark &amp; Auto themes</strong> — choose your look, or let it follow macOS automatically.</li>
-                <li><strong>CLAP plugin support</strong> — now scans CLAP plugins alongside VST3, AU/AUv3, VST2, and AAX.</li>
-                <li><strong>Enable/disable plugins</strong> — toggle any plugin on or off with a single click, no manual file moving required.</li>
-                <li><strong>Automatic updates</strong> — auricle Plugin Manager now notifies you when a new version is available and updates itself in the background.</li>
-            </ul>
-            ]]>
+                <![CDATA[
+                <h2>What's New in 3.0</h2>
+                <ul>
+                    <li><strong>Smarter plugin sorting</strong> — plugins automatically land in the right category by reading their built-in metadata, so your library stays organised without you having to do anything.</li>
+                    <li><strong>Custom categories</strong> — create, rename, delete, and colour-code your own categories alongside the built-in ones.</li>
+                    <li><strong>Plugin Library</strong> — a clean workspace to browse, search, and filter all your plugins by format, manufacturer, or category, with a detail panel for each plugin.</li>
+                    <li><strong>Light, Dark &amp; Auto themes</strong> — choose your look, or let it follow macOS automatically.</li>
+                    <li><strong>CLAP plugin support</strong> — now scans CLAP plugins alongside VST3, AU/AUv3, VST2, and AAX.</li>
+                    <li><strong>Enable/disable plugins</strong> — toggle any plugin on or off with a single click, no manual file moving required.</li>
+                    <li><strong>Automatic updates</strong> — auricle Plugin Manager now notifies you when a new version is available and updates itself in the background.</li>
+                </ul>
+                ]]>
             </description>
             <enclosure
                 url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v3.0/auricle_Plugin_Manager_v3.dmg"
