@@ -2,57 +2,13 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>auricle Plugin Manager</title>
-        <description>Most recent updates to auricle Plugin Manager</description>
-        <language>en</language>
-
         <item>
-            <title>Version 3.0</title>
+            <title>3</title>
+            <pubDate>Thu, 11 Jun 2026 12:29:46 +0100</pubDate>
             <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
-            <pubDate>Thu, 11 Jun 2026 12:00:00 +0000</pubDate>
-            <description>
-            <![CDATA[
-            <h2>What's New in 3.0</h2>
-            <ul>
-                <li><strong>Smarter plugin sorting</strong> — plugins automatically land in the right category by reading their built-in metadata, so your library stays organised without you having to do anything.</li>
-                <li><strong>Custom categories</strong> — create, rename, delete, and colour-code your own categories alongside the built-in ones.</li>
-                <li><strong>Plugin Library</strong> — a clean workspace to browse, search, and filter all your plugins by format, manufacturer, or category, with a detail panel for each plugin.</li>
-                <li><strong>Light, Dark &amp; Auto themes</strong> — choose your look, or let it follow macOS automatically.</li>
-                <li><strong>CLAP plugin support</strong> — now scans CLAP plugins alongside VST3, AU/AUv3, VST2, and AAX.</li>
-                <li><strong>Enable/disable plugins</strong> — toggle any plugin on or off with a single click, no manual file moving required.</li>
-                <li><strong>Automatic updates</strong> — auricle Plugin Manager now notifies you when a new version is available and updates itself in the background.</li>
-            </ul>
-            ]]>
-            </description>
-            <enclosure
-                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v3.0/auricle_Plugin_Manager_v3.dmg"
-                sparkle:edSignature="N5OuHNHIb/Ka+Ledb4Qs5VIGGb2TDAWxQrkaP5MNwaFWkTgZFRkWgUkcNFJXUfkQ5LjzsmOnnorBPOPq38wfCQ=="
-                length="7128027"
-                type="application/octet-stream"
-            />
+            <sparkle:shortVersionString>3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <enclosure url="auricle_Plugin_Manager_v3.dmg" length="7128027" type="application/octet-stream" sparkle:edSignature="N5OuHNHIb/Ka+Ledb4Qs5VIGGb2TDAWxQrkaP5MNwaFWkTgZFRkWgUkcNFJXUfkQ5LjzsmOnnorBPOPq38wfCQ=="/>
         </item>
-
-        <item>
-            <title>Version 2.1</title>
-            <sparkle:version>2.1</sparkle:version>
-            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
-            <pubDate>Tue, 03 Feb 2026 10:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[
-                <h2>What's New in 2.1</h2>
-                <ul>
-                    <li>HAL extension updated. ".drive" files now show up in the preview list.</li>
-                    <li>Updates for VST2 preview.</li>
-                </ul>
-                ]]>
-            </description>
-            <enclosure
-                url="https://github.com/billycrabbe/auriclePluginManager-Updates/releases/download/v2.1/auricle_Plugin_Manager_v2.1.dmg"
-                sparkle:edSignature="B7YRSNbgmEekP97RbinZrf+uzZ5E9avQB8wHteVwMIq2R1Yfu3TpxYtHJS7MT4eZg5UfkMwNS1MSE3Kp3P2ICg=="
-                length="1725730"
-                type="application/octet-stream"
-            />
-        </item>
-
     </channel>
 </rss>
