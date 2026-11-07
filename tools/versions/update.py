@@ -131,7 +131,28 @@ def run(fetcher=fetch, dry_run=False, list_file=LIST_FILE, catalog_file=CATALOG_
     return changed, failures, notes, doc
 
 
+def check_readers():
+    """Runs every reader against the live sites and prints what it finds (commits nothing).
+    Used on pull requests to prove each brand's page can still be read."""
+    bad = 0
+    for brand, (reader, _, _) in READERS.items():
+        try:
+            found = reader(fetch)
+        except Exception as e:
+            print(f"FAILED {brand}: {e}")
+            bad += 1
+            continue
+        valid = {k: v for k, v in found.items() if VALID_VERSION.match(v)}
+        print(f"{'ok' if valid else 'FAILED'} {brand}: {len(valid)} version(s)")
+        for k in sorted(valid):
+            print(f"    {k}: {valid[k]}")
+        bad += 0 if valid else 1
+    sys.exit(1 if bad else 0)
+
+
 def main():
+    if "--check-readers" in sys.argv:
+        check_readers()
     dry = "--dry-run" in sys.argv
     changed, failures, notes, doc = run(dry_run=dry)
     auto = {k: v["latest"] for k, v in doc["plugins"].items() if str(v.get("source", "")).startswith("auto:")}

@@ -5,6 +5,8 @@ name: Update plugin versions
 on:
   schedule:
     - cron: "43 5 * * 1"   # Mondays 05:43 UTC
+  pull_request:            # on a PR: only checks each brand's page can still be read
+    paths: ["tools/versions/**", ".github/workflows/update-plugin-versions.yml"]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -30,7 +32,12 @@ jobs:
       - name: Test the brand readers
         run: python3 -m unittest discover -s tools/versions/tests -v
 
+      - name: Check every brand page can be read
+        if: github.event_name == 'pull_request'
+        run: python3 tools/versions/update.py --check-readers
+
       - name: Read brand versions
+        if: github.event_name != 'pull_request'
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
             python3 tools/versions/update.py --dry-run
@@ -39,7 +46,7 @@ jobs:
           fi
 
       - name: Commit changes
-        if: github.event_name == 'schedule' || inputs.dry_run == false
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
         run: |
           if git diff --quiet -- plugin-versions.json; then
             echo "No version changes."
@@ -52,7 +59,7 @@ jobs:
           git push
 
       - name: Report broken readers
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
