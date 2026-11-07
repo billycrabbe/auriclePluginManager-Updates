@@ -1,0 +1,74 @@
+name: Update plugin versions
+
+# Weekly: reads each covered brand's public version page and refreshes plugin-versions.json,
+# which the auricle Plugin Manager downloads to show "update available".
+on:
+  schedule:
+    - cron: "43 5 * * 1"   # Mondays 05:43 UTC
+  pull_request:            # on a PR: only checks each brand's page can still be read
+    paths: ["tools/versions/**", ".github/workflows/update-plugin-versions.yml"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only show what would change (don't commit)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: plugin-versions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test the brand readers
+        run: python3 -m unittest discover -s tools/versions/tests -v
+
+      - name: Check every brand page can be read
+        if: github.event_name == 'pull_request'
+        run: python3 tools/versions/update.py --check-readers
+
+      - name: Read brand versions
+        if: github.event_name != 'pull_request'
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 tools/versions/update.py --dry-run
+          else
+            python3 tools/versions/update.py
+          fi
+
+      - name: Commit changes
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
+        run: |
+          if git diff --quiet -- plugin-versions.json; then
+            echo "No version changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plugin-versions.json
+          git commit -m "Weekly plugin version check"
+          git push
+
+      - name: Report broken readers
+        if: always() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f failures.txt ] || exit 0
+          title="Plugin version check: a brand reader needs fixing"
+          body=$(printf 'The weekly version check could not read these brands, so their last good versions were kept:\n\n```\n%s\n```\n\nRun: %s' "$(cat failures.txt)" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}")
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
