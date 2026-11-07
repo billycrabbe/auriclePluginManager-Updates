@@ -1,1 +1,59 @@
-{"products": []}
+{
+  "products": [
+    {
+      "brand": "soundtoys",
+      "product": "Devil-Loc",
+      "keys": [
+        "com.soundtoys.audiounit.devilloc",
+        "soundtoys:devil-loc"
+      ],
+      "installedWhenAdded": [
+        "5.5.4.18982 Authorization: DevilLoc"
+      ]
+    },
+    {
+      "brand": "soundtoys",
+      "product": "Devil-Loc Deluxe",
+      "keys": [
+        "com.soundtoys.audiounit.devillocdeluxe",
+        "soundtoys:devil-loc deluxe"
+      ],
+      "installedWhenAdded": [
+        "5.5.4.18982 Authorization: DevilLocDeluxe"
+      ]
+    },
+    {
+      "brand": "soundtoys",
+      "product": "Little Plate",
+      "keys": [
+        "com.soundtoys.audiounit.littleplate",
+        "soundtoys:little plate"
+      ],
+      "installedWhenAdded": [
+        "5.5.4.18982 Authorization: LittlePlate"
+      ]
+    },
+    {
+      "brand": "soundtoys",
+      "product": "Little Radiator",
+      "keys": [
+        "com.soundtoys.audiounit.littleradiator",
+        "soundtoys:little radiator"
+      ],
+      "installedWhenAdded": [
+        "5.5.4.18982 Authorization: LittleRadiator"
+      ]
+    },
+    {
+      "brand": "soundtoys",
+      "product": "PhaseMistress",
+      "keys": [
+        "com.soundtoys.audiounit.phasemistress",
+        "soundtoys:phasemistress"
+      ],
+      "installedWhenAdded": [
+        "5.5.4.18982 Authorization: PhaseMistress"
+      ]
+    }
+  ]
+}
